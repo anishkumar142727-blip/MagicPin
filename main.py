@@ -52,7 +52,7 @@ async def metadata():
     return {
         "team_name": "MagicPin Contender",
         "team_members": ["Anish Sharma"],
-        "model": "gpt-4o",
+        "model": os.environ.get("MODEL_NAME", "gemini-flash-latest"),
         "approach": "single-prompt composer with context retrieval",
         "contact_email": "anishsharma_23ep015@dtu.ac.in",
         "version": "1.0.0",
